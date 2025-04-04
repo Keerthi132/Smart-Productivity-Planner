@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <header>
+        📝 Smart Productivity Planner
+        <span>Organize your day with smart task tracking</span>
+    </header>
+
+    <div class="container">
+
+        <h2>➕ Add a New Task</h2>
+        <div class="input-group">
+          <input type="text" id="taskInput" placeholder="Enter a new task...">
+          <button onclick="addTask()">Add</button>
+        </div>
+        <br/>
+        <h2>📋 Your Tasks</h2>
+        <br/>
+        <p>
+            ✅ Tick the checkbox to mark your tasks as completed.
+        </p>
+        <ul id="taskList"></ul>
+        <br/>
+        <h2>✔ Completed Tasks</h2>
+        <ul id="completedTasks"></ul>
+      
+        <button class="clear-btn" onclick="clearCompletedTasks()">🗑 Clear Completed Tasks</button>
+      </div>
+
+  <footer>
+    © 2025 YourName. All Rights Reserved.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
