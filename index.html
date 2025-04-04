@@ -13,7 +13,6 @@
     </header>
 
     <div class="container">
-
         <h2>➕ Add a New Task</h2>
         <div class="input-group">
           <input type="text" id="taskInput" placeholder="Enter a new task...">
@@ -21,20 +20,20 @@
         </div>
         <br/>
         <h2>📋 Your Tasks</h2>
-        <br/>
-        <p>
-            ✅ Tick the checkbox to mark your tasks as completed.
-        </p>
+        <p>✅ Tick the checkbox to mark your tasks as completed.</p>
+        <div id="noTasksBox" class="empty-box"> No scheduled tasks</div>
         <ul id="taskList"></ul>
         <br/>
-        <h2>✔ Completed Tasks</h2>
-        <ul id="completedTasks"></ul>
-      
-        <button class="clear-btn" onclick="clearCompletedTasks()">🗑 Clear Completed Tasks</button>
-      </div>
 
-  <footer>
-    © 2025 YourName. All Rights Reserved.
+        <h2>✔ Completed Tasks</h2>
+        <div id="noCompletedTasksBox" class="empty-box"> No completed tasks</div>
+        <ul id="completedTasks"></ul>
+
+        <button class="clear-btn" onclick="clearCompletedTasks()">🗑 Clear Completed Tasks</button>
+    </div>
+
+    <footer>
+      © 2025 YourName. All Rights Reserved.
     </footer>
 
     <script src="script.js"></script>
